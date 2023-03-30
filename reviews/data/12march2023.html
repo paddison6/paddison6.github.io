@@ -80,6 +80,32 @@
                             <b>Verdict: 6/10</b>
                         </p>
                     </div>
+                    <hr>
+                    <div class="post-comment-sec-div">
+                        <h5>Send a comment:</h5>
+                        <div class="border border-dark rounded px-1 py-1">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                </div>
+                                <input id="comment-username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Your Comment</span>
+                                </div>
+                                <textarea id="comment-user-comment" class="form-control" aria-label="With textarea"></textarea>
+                                <button onclick="writeCommentData();" id="comment-sec-submit-button" type="button" class="btn btn-secondary ml-1">Submit</button>
+                            </div>
+                        </div>
+                        <input type="text" value="12march2023-pubstyle" id="post-id" hidden>
+                    </div>
+                    <hr>
+                    <h4>Comments</h4>
+                    <br>
+                    <div id="comment-sec-id" class="comment-sec-div">
+                    </div>
                 </div>
             </div>
             <div class="d-md-none" id="footer-div">
@@ -96,5 +122,8 @@
                 </p>
             </div>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+        <script src="../database.js"></script>
     </body>
 </html>

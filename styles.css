@@ -215,6 +215,22 @@ a:hover {
     margin: auto auto;
 }
 
+.post-comment-sec-div {
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+.comment-sec-div {
+    margin: 0 auto;
+    width: 95%;
+    
+}
+
+.comment-sec-comment {
+    margin-right: 2%;
+}
+
 @media only screen and (max-width: 768px) {
 /* For mobile phones: */
     #left-nav {
@@ -229,7 +245,7 @@ a:hover {
     }
     #image-div {
         margin: 10% auto;
-        width: 50%;
+        width: 90%;
     }
     #footer-div {
         width: 90%;
