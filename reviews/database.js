@@ -41,10 +41,16 @@ function writeCommentData() {
     $("#comment-user-comment").val("");
 }
 
-function htmlEncode(str){
-    return String(str).replace(/[^\w. ]/gi, function(c){
-        return '&#'+c.charCodeAt(0)+';';
-    });
+function htmlDecode(input) {
+    const textArea = document.createElement("textarea");
+    textArea.innerHTML = input;
+    return textArea.value;
+}
+
+function htmlEncode(input) {
+    const textArea = document.createElement("textarea");
+    textArea.innerText = input;
+    return textArea.innerHTML.split("<br>").join("\n");
 }
 
 function getCommentsAndInsert() {
