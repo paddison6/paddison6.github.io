@@ -78,6 +78,17 @@ a:hover {
     border-radius: 25%;
 }
 
+#image2-div {
+    margin: 1% auto;
+    width: 70%;
+}
+
+#image2 {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25%;
+}
+
 .about-image-div {
     /* margin: 10% 10%; */
     display: flex;
@@ -267,6 +278,15 @@ a:hover {
         text-decoration: none;
         border-radius: 50%;
         margin: 0 3px;
+    }
+    
+    #image2 {
+        width: 100%;
+    }
+
+    #image2-div {
+        margin: 10% auto;
+        width: 100%;
     }
 
     #soup-img {
